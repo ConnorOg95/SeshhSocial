@@ -46,7 +46,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X27-tv-Yfl" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
                                         <rect key="frame" x="100" y="245" width="143" height="30"/>
@@ -58,6 +58,9 @@
                                         <state key="normal" title="LOG IN">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="logInBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X8u-jg-PAr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lea-bX-iut" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
                                         <rect key="frame" x="100" y="280" width="143" height="30"/>
@@ -114,6 +117,10 @@
                             <constraint firstItem="1Yt-8B-LSk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qHp-OQ-LkQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTxt" destination="3cL-5M-c9O" id="exS-Ci-9WA"/>
+                        <outlet property="passwordTxt" destination="bKl-aG-jjv" id="z74-X9-3EJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
