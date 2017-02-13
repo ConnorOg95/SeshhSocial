@@ -14,6 +14,10 @@
 		CEFE813D1E5213B50044B134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFE813C1E5213B50044B134 /* Assets.xcassets */; };
 		CEFE81401E5213B50044B134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFE813E1E5213B50044B134 /* LaunchScreen.storyboard */; };
 		CEFE81481E5214B00044B134 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEFE81471E5214B00044B134 /* GoogleService-Info.plist */; };
+		CEFE814D1E5234CE0044B134 /* StandardDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE814C1E5234CE0044B134 /* StandardDisplayView.swift */; };
+		CEFE81501E52358A0044B134 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE814F1E52358A0044B134 /* Constants.swift */; };
+		CEFE81521E523A890044B134 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE81511E523A890044B134 /* RoundButton.swift */; };
+		CEFE81541E523D3C0044B134 /* ModifiedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE81531E523D3C0044B134 /* ModifiedTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		CEFE813F1E5213B50044B134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEFE81411E5213B50044B134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEFE81471E5214B00044B134 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEFE814C1E5234CE0044B134 /* StandardDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardDisplayView.swift; sourceTree = "<group>"; };
+		CEFE814F1E52358A0044B134 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CEFE81511E523A890044B134 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		CEFE81531E523D3C0044B134 /* ModifiedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModifiedTextField.swift; sourceTree = "<group>"; };
 		F5EAA009A4D5604E3F6918C6 /* Pods-SeshhSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeshhSocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-SeshhSocial/Pods-SeshhSocial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +88,7 @@
 		CEFE81341E5213B40044B134 /* SeshhSocial */ = {
 			isa = PBXGroup;
 			children = (
+				CEFE814E1E5235770044B134 /* Util */,
 				CEFE814B1E52184C0044B134 /* Controller */,
 				CEFE814A1E5218460044B134 /* View */,
 				CEFE81491E52183F0044B134 /* Model */,
@@ -103,6 +112,9 @@
 		CEFE814A1E5218460044B134 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CEFE814C1E5234CE0044B134 /* StandardDisplayView.swift */,
+				CEFE81511E523A890044B134 /* RoundButton.swift */,
+				CEFE81531E523D3C0044B134 /* ModifiedTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -113,6 +125,14 @@
 				CEFE81371E5213B50044B134 /* SignInVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		CEFE814E1E5235770044B134 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CEFE814F1E52358A0044B134 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +261,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEFE81381E5213B50044B134 /* SignInVC.swift in Sources */,
+				CEFE81521E523A890044B134 /* RoundButton.swift in Sources */,
+				CEFE81501E52358A0044B134 /* Constants.swift in Sources */,
 				CEFE81361E5213B50044B134 /* AppDelegate.swift in Sources */,
+				CEFE81541E523D3C0044B134 /* ModifiedTextField.swift in Sources */,
+				CEFE814D1E5234CE0044B134 /* StandardDisplayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
