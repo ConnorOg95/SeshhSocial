@@ -41,17 +41,11 @@ class SignInVC: UIViewController {
                 if error == nil {
                     print("CONNOR: Email user authenticated with Firebase")
                 } else {
-                    FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
-                        if error != nil {
-                            print("CONNOR: Unable to authenticate with Firebase Email")
-                        } else {
-                            print("CONNOR: Sucessfully authenticated with Firebase Email")
-                        }
-                    })
+        //POP UP MESSAGE, WRONG LOGIN DETAILS/SIGN UP
+                    print("CONNOR: Unable to authenticate Email with Firebase")
                 }
             })
         }
     }
-
 }
 

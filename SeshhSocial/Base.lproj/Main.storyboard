@@ -72,6 +72,9 @@
                                         <state key="normal" title="SIGN UP">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="hAY-YR-HKd" kind="show" id="YpF-4h-rWT"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWC-Nr-1E5">
                                         <rect key="frame" x="97" y="320" width="150" height="30"/>
@@ -125,8 +128,215 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Sign UpVC-->
+        <scene sceneID="zMV-h4-nuB">
+            <objects>
+                <viewController id="hAY-YR-HKd" customClass="SignUpVC" customModule="SeshhSocial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2vC-Zu-cb8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Brn-yi-i0q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="57a-Nc-J30">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SHb-pP-xNB" customClass="HeaderView" customModule="SeshhSocial" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="343" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newseshhlogocropped" translatesAutoresizingMaskIntoConstraints="NO" id="Xvl-AF-kHr">
+                                        <rect key="frame" x="72" y="3" width="200" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="SLb-l5-ThP"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Xvl-AF-kHr" firstAttribute="top" secondItem="SHb-pP-xNB" secondAttribute="top" constant="3" id="99R-Mq-o8F"/>
+                                    <constraint firstItem="Xvl-AF-kHr" firstAttribute="centerX" secondItem="SHb-pP-xNB" secondAttribute="centerX" id="GRQ-Mc-aEp"/>
+                                    <constraint firstAttribute="height" constant="60" id="ITq-ET-j3P"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xvl-AF-kHr" secondAttribute="bottom" constant="3" id="ub2-SV-t9M"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wQ-3G-F2f" customClass="MainDisplayView" customModule="SeshhSocial" customModuleProvider="target">
+                                <rect key="frame" x="16" y="110" width="343" height="180"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile1" translatesAutoresizingMaskIntoConstraints="NO" id="zNk-Ta-rmz" customClass="ProfilePhotoImgView" customModule="SeshhSocial" customModuleProvider="target">
+                                        <rect key="frame" x="245" y="8" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="EhX-9H-mhL"/>
+                                            <constraint firstAttribute="height" constant="90" id="N9X-Rf-bwi"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="kDA-bX-XHa">
+                                        <rect key="frame" x="8" y="8" width="230" height="96"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E58-yo-3MW" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="230" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="230" id="uhE-Fn-rHr"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Maq-3N-wew" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="33" width="230" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rLg-2s-Ipb" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="66" width="230" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="96" id="YaG-KC-DWB"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="s3U-EL-Djp">
+                                        <rect key="frame" x="8" y="107" width="327" height="63"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Txd-QF-FeE" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1fT-e3-gYB" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="33" width="327" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="63" id="DCQ-Ev-MrP"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="s3U-EL-Djp" firstAttribute="leading" secondItem="6wQ-3G-F2f" secondAttribute="leading" constant="8" id="Bjf-b0-ctx"/>
+                                    <constraint firstAttribute="trailing" secondItem="zNk-Ta-rmz" secondAttribute="trailing" constant="8" id="SWq-u3-FEQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="s3U-EL-Djp" secondAttribute="trailing" constant="8" id="V7s-PK-s1B"/>
+                                    <constraint firstAttribute="height" constant="180" id="lKZ-ZQ-tDe"/>
+                                    <constraint firstItem="kDA-bX-XHa" firstAttribute="top" secondItem="6wQ-3G-F2f" secondAttribute="top" constant="8" id="mpo-Q3-jvD"/>
+                                    <constraint firstItem="kDA-bX-XHa" firstAttribute="leading" secondItem="6wQ-3G-F2f" secondAttribute="leading" constant="8" id="oIv-BP-Ftp"/>
+                                    <constraint firstItem="zNk-Ta-rmz" firstAttribute="top" secondItem="6wQ-3G-F2f" secondAttribute="top" constant="8" id="vRu-h4-qFy"/>
+                                    <constraint firstItem="s3U-EL-Djp" firstAttribute="top" secondItem="kDA-bX-XHa" secondAttribute="bottom" constant="3" id="vhP-1c-3Ak"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WxH-YK-rZ9" customClass="MainDisplayView" customModule="SeshhSocial" customModuleProvider="target">
+                                <rect key="frame" x="16" y="320" width="343" height="210"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="pka-iN-J4q">
+                                        <rect key="frame" x="8" y="8" width="327" height="192"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zDG-HN-RIV" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xBK-sM-Jnc" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="34" width="327" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="D.O.B." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ECD-zC-8fw" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="68" width="327" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="01n-cP-xgx" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="102" width="327" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="P2F-of-ZvO"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="pka-iN-J4q" firstAttribute="leading" secondItem="WxH-YK-rZ9" secondAttribute="leading" constant="8" id="Gld-bi-axk"/>
+                                    <constraint firstAttribute="trailing" secondItem="pka-iN-J4q" secondAttribute="trailing" constant="8" id="ayb-xj-7W7"/>
+                                    <constraint firstItem="pka-iN-J4q" firstAttribute="top" secondItem="WxH-YK-rZ9" secondAttribute="top" constant="8" id="hAr-zk-Wfn"/>
+                                    <constraint firstAttribute="height" constant="210" id="wr0-dq-qE0"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="svD-na-GWW" customClass="MainDisplayView" customModule="SeshhSocial" customModuleProvider="target">
+                                <rect key="frame" x="16" y="560" width="343" height="46"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTY-D4-g0t" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="8" width="311" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="SCj-N2-a2w"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                        <state key="normal" title="SIGN UP">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signUpBtnPressed:" destination="hAY-YR-HKd" eventType="touchUpInside" id="aCD-mi-o6i"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="UTY-D4-g0t" firstAttribute="top" secondItem="svD-na-GWW" secondAttribute="top" constant="8" id="YU1-KM-pt3"/>
+                                    <constraint firstAttribute="height" constant="46" id="hGA-2u-xXP"/>
+                                    <constraint firstAttribute="trailing" secondItem="UTY-D4-g0t" secondAttribute="trailing" constant="16" id="miD-xv-3SD"/>
+                                    <constraint firstItem="UTY-D4-g0t" firstAttribute="leading" secondItem="svD-na-GWW" secondAttribute="leading" constant="16" id="obR-le-jIU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WxH-YK-rZ9" firstAttribute="top" secondItem="6wQ-3G-F2f" secondAttribute="bottom" constant="30" id="1ds-HN-Kqf"/>
+                            <constraint firstItem="SHb-pP-xNB" firstAttribute="top" secondItem="2vC-Zu-cb8" secondAttribute="bottom" id="6Kh-IR-T8M"/>
+                            <constraint firstItem="svD-na-GWW" firstAttribute="trailing" secondItem="57a-Nc-J30" secondAttribute="trailingMargin" id="BUH-eo-OG2"/>
+                            <constraint firstItem="svD-na-GWW" firstAttribute="leading" secondItem="57a-Nc-J30" secondAttribute="leadingMargin" id="Esn-bI-dfa"/>
+                            <constraint firstItem="6wQ-3G-F2f" firstAttribute="centerX" secondItem="57a-Nc-J30" secondAttribute="centerX" id="GOs-u8-KRQ"/>
+                            <constraint firstItem="svD-na-GWW" firstAttribute="top" secondItem="WxH-YK-rZ9" secondAttribute="bottom" constant="30" id="HRB-ne-bnA"/>
+                            <constraint firstItem="6wQ-3G-F2f" firstAttribute="trailing" secondItem="57a-Nc-J30" secondAttribute="trailingMargin" id="NIQ-TJ-XWg"/>
+                            <constraint firstItem="WxH-YK-rZ9" firstAttribute="centerX" secondItem="57a-Nc-J30" secondAttribute="centerX" id="QwQ-V9-2o4"/>
+                            <constraint firstItem="6wQ-3G-F2f" firstAttribute="leading" secondItem="57a-Nc-J30" secondAttribute="leadingMargin" id="RcQ-XE-uOW"/>
+                            <constraint firstItem="SHb-pP-xNB" firstAttribute="trailing" secondItem="57a-Nc-J30" secondAttribute="trailingMargin" id="XWs-44-hEp"/>
+                            <constraint firstItem="6wQ-3G-F2f" firstAttribute="top" secondItem="2vC-Zu-cb8" secondAttribute="bottom" constant="90" id="YLE-VU-rOm"/>
+                            <constraint firstItem="SHb-pP-xNB" firstAttribute="leading" secondItem="57a-Nc-J30" secondAttribute="leadingMargin" id="nQv-YL-P9m"/>
+                            <constraint firstItem="WxH-YK-rZ9" firstAttribute="trailing" secondItem="57a-Nc-J30" secondAttribute="trailingMargin" id="oZp-Yg-h59"/>
+                            <constraint firstItem="WxH-YK-rZ9" firstAttribute="leading" secondItem="57a-Nc-J30" secondAttribute="leadingMargin" id="wbd-gd-058"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DOBTxtFld" destination="ECD-zC-8fw" id="BE0-60-duk"/>
+                        <outlet property="confirmedEmailTxtFld" destination="1fT-e3-gYB" id="YRu-KN-opY"/>
+                        <outlet property="confirmedPasswordTxtFld" destination="rLg-2s-Ipb" id="pFS-Je-kbv"/>
+                        <outlet property="descriptionTxtFld" destination="01n-cP-xgx" id="GXC-Pf-1vO"/>
+                        <outlet property="firstNameTxtFld" destination="zDG-HN-RIV" id="PF0-O8-OZA"/>
+                        <outlet property="lastNameTxtFld" destination="xBK-sM-Jnc" id="tEj-pR-vyK"/>
+                        <outlet property="usernameTxtFld" destination="E58-yo-3MW" id="aEJ-po-QUY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DlJ-ce-SRu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798" y="38"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="newseshhlogocropped" width="212" height="74"/>
+        <image name="profile1" width="250" height="250"/>
         <image name="seshhlogo350frcropped" width="247" height="87"/>
     </resources>
 </document>
