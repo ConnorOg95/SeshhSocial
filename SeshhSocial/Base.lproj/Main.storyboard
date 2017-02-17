@@ -123,10 +123,12 @@
                     <connections>
                         <outlet property="emailTxt" destination="3cL-5M-c9O" id="exS-Ci-9WA"/>
                         <outlet property="passwordTxt" destination="bKl-aG-jjv" id="z74-X9-3EJ"/>
+                        <segue destination="1Xl-Cq-WHe" kind="show" identifier="goToHomePage" id="n24-pr-yYc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="33" y="37"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="zMV-h4-nuB">
@@ -376,6 +378,9 @@
                                         <state key="normal" title="LOG OUT">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="logOutBtnPressed:" destination="1Xl-Cq-WHe" eventType="touchUpInside" id="4Zt-6n-JAz"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -390,7 +395,43 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ALh-19-fAJ" customClass="StandardDisplayView" customModule="SeshhSocial" customModuleProvider="target">
                                 <rect key="frame" x="16" y="110" width="343" height="557"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTh-CN-ifY" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
+                                        <rect key="frame" x="111.5" y="60" width="120" height="30"/>
+                                        <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="2gt-zY-tdU"/>
+                                            <constraint firstAttribute="width" constant="120" id="IKa-zQ-T6P"/>
+                                        </constraints>
+                                        <state key="normal" title="SESHH FEED">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Z4e-Pf-rbe" kind="show" identifier="goToSeshhFeed" id="Mrj-sb-gCS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GdB-ae-e1F" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
+                                        <rect key="frame" x="111.5" y="100" width="120" height="30"/>
+                                        <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Jyw-3f-PPP"/>
+                                            <constraint firstAttribute="width" constant="120" id="bhK-Rn-3Dd"/>
+                                        </constraints>
+                                        <state key="normal" title="CHECK IN">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="6qb-Mx-qSp" kind="show" identifier="goToCheckIn" id="xEY-pp-R7c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="jTh-CN-ifY" firstAttribute="top" secondItem="ALh-19-fAJ" secondAttribute="top" constant="60" id="MrJ-ub-D8p"/>
+                                    <constraint firstItem="GdB-ae-e1F" firstAttribute="centerX" secondItem="ALh-19-fAJ" secondAttribute="centerX" id="R7w-F8-IYf"/>
+                                    <constraint firstItem="jTh-CN-ifY" firstAttribute="centerX" secondItem="ALh-19-fAJ" secondAttribute="centerX" id="rf3-Bf-HI2"/>
+                                    <constraint firstItem="GdB-ae-e1F" firstAttribute="top" secondItem="jTh-CN-ifY" secondAttribute="bottom" constant="10" id="sv0-tn-Aiu"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -404,6 +445,9 @@
                             <constraint firstItem="IM9-RK-uhk" firstAttribute="trailing" secondItem="dRe-Xz-n15" secondAttribute="trailingMargin" id="ufF-pW-WCO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToLogIn" id="HKH-Ga-MwF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yru-RZ-ZxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -134,10 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				CEFE81371E5213B50044B134 /* SignInVC.swift */,
-				CE0371901E52793C00828855 /* SignUpVC.swift */,
 				CE0371941E5749A300828855 /* HomeScreenVC.swift */,
 				CE0371961E5749CC00828855 /* SeshhFeedVC.swift */,
 				CE0371981E5749E600828855 /* CheckInVC.swift */,
+				CE0371901E52793C00828855 /* SignUpVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";

@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SwiftKeychainWrapper
 
 class SignInVC: UIViewController {
     
@@ -16,23 +17,31 @@ class SignInVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            performSegue(withIdentifier: "goToHomePage", sender: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func firebaseAuth(_ credential: FIRAuthCredential) {
-        FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
-            if error != nil {
-                print("CONNOR: Unable to authenticate with Firebase - \(error)")
-            } else {
-                print("CONNOR: Successfully authenticated with Firebase")
-            }
-        })
-    }
+    //THIS IS FIREBASE AUTHENTICATION USED FOR FB/GOOGLE LOGIN
+//    func firebaseAuth(_ credential: FIRAuthCredential) {
+//        FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
+//            if error != nil {
+//                print("CONNOR: Unable to authenticate with Firebase - \(error)")
+//            } else {
+//                print("CONNOR: Successfully authenticated with Firebase")
+//                if let user = user {
+//                    KeychainWrapper.standard.set(user.uid, forKey: KEY_UID)
+//                }
+//            }
+//        })
+//    }
 
     @IBAction func logInBtnPressed(_ sender: Any) {
         
@@ -58,14 +67,21 @@ class SignInVC: UIViewController {
                             print("CONNOR: Create User Error: \(error!)")
                         }
                     }
-                    
                 } else {
                     print("CONNOR: Log In Authentication Successful")
-
+                    if let user = user {
+                        KeychainWrapper.standard.set(user.uid, forKey: KEY_UID)
+                        self.performSegue(withIdentifier: "goToHomePage", sender: nil)
+                    }
                 }
             })
         }
     }
+    
+    
+    
+    
+    
 }
 
 
