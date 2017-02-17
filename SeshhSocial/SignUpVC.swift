@@ -10,9 +10,13 @@ import UIKit
 import Firebase
 
 class SignUpVC: UIViewController {
+    
+    let databaseRef = FIRDatabase.database().reference(fromURL: "https://seshh-social.firebaseio.com/")
 
     @IBOutlet weak var usernameTxtFld: ModifiedTextField!
+    @IBOutlet weak var passwordTxtFld: ModifiedTextField!
     @IBOutlet weak var confirmedPasswordTxtFld: ModifiedTextField!
+    @IBOutlet weak var emailTxtFld: ModifiedTextField!
     @IBOutlet weak var confirmedEmailTxtFld: ModifiedTextField!
     @IBOutlet weak var firstNameTxtFld: ModifiedTextField!
     @IBOutlet weak var lastNameTxtFld: ModifiedTextField!
@@ -30,18 +34,68 @@ class SignUpVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func signUp() {
+        guard let username = usernameTxtFld.text else {
+            print("CONNOR: Username signup error")
+            return
+        }
+        guard let confirmedEmail = confirmedEmailTxtFld.text else {
+            print("CONNOR: Confirmed email signup error")
+            return
+        }
+        guard let confirmedPassword = confirmedPasswordTxtFld.text else {
+            print("CONNOR: Confirmed password signup error")
+            return
+        }
+        FIRAuth.auth()?.createUser(withEmail: confirmedEmail, password: confirmedPassword, completion: { (user, error) in
+            if error != nil {
+                print("BAIT")
+                print(error!)
+                return
+            }
+            guard let uid = user?.uid else {
+                return
+            }
+            let userReference = self.databaseRef.child("users").child(uid)
+            let values = ["Username": username, "Email": confirmedEmail, "Password": confirmedPassword]
+            userReference.updateChildValues(values
+                , withCompletionBlock: { (error, ref) in
+                    if error != nil {
+                        print(error!)
+                        return
+                    }
+                    self.dismiss(animated: true, completion: nil)
+            })
+        })
+    }
     @IBAction func signUpBtnPressed(_ sender: Any) {
         
-        if let email = confirmedEmailTxtFld.text, let password = confirmedPasswordTxtFld.text {
-            FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
-                if error != nil {
-                    //POP UP MESSAGE
-                    print("CONNOR: Unable to authenticate with Firebase Email")
-                } else {
-                    print("CONNOR: Sucessfully authenticated with Firebase Email")
-            
-                }
-            })
+        //Check if any of the fields are empty - Needs to be added
+        
+        if (passwordTxtFld.text != confirmedPasswordTxtFld.text) {
+            print("CONNOR: Emails do not match")
+        } else if (emailTxtFld.text != confirmedEmailTxtFld.text) {
+            print("CONNOR: Passwords do not match")
+        } else {
+        signUp()
         }
     }
 }
+
+
+//    @IBAction func signUpBtnPressed(_ sender: Any) {
+//        }
+//        
+//        if let email = confirmedEmailTxtFld.text, let password = confirmedPasswordTxtFld.text {
+//            FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
+//                if error != nil {
+//                    //POP UP MESSAGE
+//                    print("CONNOR: Unable to authenticate with Firebase Email")
+//                } else {
+//                    print("CONNOR: Sucessfully authenticated with Firebase Email")
+//            
+//                }
+//            })
+//        }
+//    }
+//}

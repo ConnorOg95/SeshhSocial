@@ -28,33 +28,33 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seshhlogo350frcropped" translatesAutoresizingMaskIntoConstraints="NO" id="XQh-BS-Bb6">
                                         <rect key="frame" x="0.0" y="55" width="343" height="87"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3cL-5M-c9O" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3cL-5M-c9O" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
                                         <rect key="frame" x="75" y="170" width="193" height="30"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="vlN-w7-8k5"/>
                                         </constraints>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bKl-aG-jjv" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bKl-aG-jjv" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
                                         <rect key="frame" x="75" y="205" width="193" height="30"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Nra-C5-YBO"/>
                                         </constraints>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X27-tv-Yfl" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
                                         <rect key="frame" x="100" y="245" width="143" height="30"/>
-                                        <color key="backgroundColor" white="0.13508026215805471" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="2ax-BV-jb5"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                         <state key="normal" title="LOG IN">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -64,11 +64,11 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lea-bX-iut" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
                                         <rect key="frame" x="100" y="280" width="143" height="30"/>
-                                        <color key="backgroundColor" white="0.13508026215805471" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="lqc-eK-u1k"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                         <state key="normal" title="SIGN UP">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -82,13 +82,13 @@
                                             <constraint firstAttribute="width" constant="150" id="14o-0a-vIA"/>
                                             <constraint firstAttribute="height" constant="30" id="eNK-Af-rzB"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                         <state key="normal" title="Forgot Password?">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="XQh-BS-Bb6" firstAttribute="top" secondItem="1Yt-8B-LSk" secondAttribute="top" constant="55" id="0KL-lL-IXD"/>
                                     <constraint firstItem="X27-tv-Yfl" firstAttribute="leading" secondItem="1Yt-8B-LSk" secondAttribute="leading" constant="100" id="32D-dD-Gdm"/>
@@ -161,7 +161,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wQ-3G-F2f" customClass="MainDisplayView" customModule="SeshhSocial" customModuleProvider="target">
                                 <rect key="frame" x="16" y="110" width="343" height="180"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile1" translatesAutoresizingMaskIntoConstraints="NO" id="zNk-Ta-rmz" customClass="ProfilePhotoImgView" customModule="SeshhSocial" customModuleProvider="target">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile1" translatesAutoresizingMaskIntoConstraints="NO" id="zNk-Ta-rmz" customClass="ProfileImageView" customModule="SeshhSocial" customModuleProvider="target">
                                         <rect key="frame" x="245" y="8" width="90" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="90" id="EhX-9H-mhL"/>
@@ -173,6 +173,7 @@
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E58-yo-3MW" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="230" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="230" id="uhE-Fn-rHr"/>
                                                 </constraints>
@@ -182,12 +183,14 @@
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Maq-3N-wew" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="33" width="230" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rLg-2s-Ipb" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="66" width="230" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -202,12 +205,14 @@
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Txd-QF-FeE" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="327" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1fT-e3-gYB" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="33" width="327" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -238,24 +243,28 @@
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zDG-HN-RIV" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="327" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xBK-sM-Jnc" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="34" width="327" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="D.O.B." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ECD-zC-8fw" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="68" width="327" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="01n-cP-xgx" customClass="ModifiedTextField" customModule="SeshhSocial" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="102" width="327" height="90"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="90" id="P2F-of-ZvO"/>
                                                 </constraints>
@@ -279,16 +288,16 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTY-D4-g0t" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
                                         <rect key="frame" x="16" y="8" width="311" height="30"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="SCj-N2-a2w"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                         <state key="normal" title="SIGN UP">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="signUpBtnPressed:" destination="hAY-YR-HKd" eventType="touchUpInside" id="aCD-mi-o6i"/>
+                                            <action selector="signUpBtnPressed:" destination="hAY-YR-HKd" eventType="touchUpInside" id="6c5-85-eiK"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -324,14 +333,211 @@
                         <outlet property="confirmedEmailTxtFld" destination="1fT-e3-gYB" id="YRu-KN-opY"/>
                         <outlet property="confirmedPasswordTxtFld" destination="rLg-2s-Ipb" id="pFS-Je-kbv"/>
                         <outlet property="descriptionTxtFld" destination="01n-cP-xgx" id="GXC-Pf-1vO"/>
+                        <outlet property="emailTxtFld" destination="Txd-QF-FeE" id="XES-Uo-kAt"/>
                         <outlet property="firstNameTxtFld" destination="zDG-HN-RIV" id="PF0-O8-OZA"/>
                         <outlet property="lastNameTxtFld" destination="xBK-sM-Jnc" id="tEj-pR-vyK"/>
-                        <outlet property="usernameTxtFld" destination="E58-yo-3MW" id="aEJ-po-QUY"/>
+                        <outlet property="passwordTxtFld" destination="Maq-3N-wew" id="3g2-oN-kJG"/>
+                        <outlet property="usernameTxtFld" destination="Maq-3N-wew" id="qzQ-H7-FTR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DlJ-ce-SRu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="798" y="38"/>
+        </scene>
+        <!--Home ScreenVC-->
+        <scene sceneID="7rT-OB-iLz">
+            <objects>
+                <viewController id="1Xl-Cq-WHe" customClass="HomeScreenVC" customModule="SeshhSocial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E8O-wU-MSt"/>
+                        <viewControllerLayoutGuide type="bottom" id="VUM-Ti-B72"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dRe-Xz-n15">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IM9-RK-uhk" customClass="HeaderView" customModule="SeshhSocial" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="343" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newseshhlogocropped" translatesAutoresizingMaskIntoConstraints="NO" id="9wX-sY-znA">
+                                        <rect key="frame" x="71.5" y="3" width="200" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="SUj-4a-Lob"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ag-QK-6Na" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
+                                        <rect key="frame" x="270" y="15" width="65" height="30"/>
+                                        <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="65" id="gur-57-ll7"/>
+                                            <constraint firstAttribute="height" constant="30" id="iMT-Bn-niY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="11"/>
+                                        <state key="normal" title="LOG OUT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="9wX-sY-znA" firstAttribute="centerX" secondItem="IM9-RK-uhk" secondAttribute="centerX" id="4Rh-j4-Ras"/>
+                                    <constraint firstItem="9wX-sY-znA" firstAttribute="top" secondItem="IM9-RK-uhk" secondAttribute="top" constant="3" id="e90-i3-h1C"/>
+                                    <constraint firstItem="4ag-QK-6Na" firstAttribute="centerY" secondItem="IM9-RK-uhk" secondAttribute="centerY" id="k4h-BI-Bge"/>
+                                    <constraint firstAttribute="bottom" secondItem="9wX-sY-znA" secondAttribute="bottom" constant="3" id="oO3-rb-lUh"/>
+                                    <constraint firstAttribute="height" constant="60" id="yRd-tO-sMn"/>
+                                    <constraint firstAttribute="trailing" secondItem="4ag-QK-6Na" secondAttribute="trailing" constant="8" id="zKx-pj-j0F"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ALh-19-fAJ" customClass="StandardDisplayView" customModule="SeshhSocial" customModuleProvider="target">
+                                <rect key="frame" x="16" y="110" width="343" height="557"/>
+                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VUM-Ti-B72" firstAttribute="top" secondItem="ALh-19-fAJ" secondAttribute="bottom" id="Db9-an-LDM"/>
+                            <constraint firstItem="IM9-RK-uhk" firstAttribute="top" secondItem="E8O-wU-MSt" secondAttribute="bottom" id="Dhs-Fk-Hcx"/>
+                            <constraint firstItem="IM9-RK-uhk" firstAttribute="leading" secondItem="dRe-Xz-n15" secondAttribute="leadingMargin" id="KDA-NX-PZf"/>
+                            <constraint firstItem="ALh-19-fAJ" firstAttribute="leading" secondItem="dRe-Xz-n15" secondAttribute="leadingMargin" id="Sx8-vP-5yB"/>
+                            <constraint firstItem="ALh-19-fAJ" firstAttribute="trailing" secondItem="dRe-Xz-n15" secondAttribute="trailingMargin" id="mGI-VM-4ld"/>
+                            <constraint firstItem="ALh-19-fAJ" firstAttribute="top" secondItem="IM9-RK-uhk" secondAttribute="bottom" constant="30" id="qWF-Xk-1xZ"/>
+                            <constraint firstItem="IM9-RK-uhk" firstAttribute="trailing" secondItem="dRe-Xz-n15" secondAttribute="trailingMargin" id="ufF-pW-WCO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yru-RZ-ZxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="730"/>
+        </scene>
+        <!--Seshh FeedVC-->
+        <scene sceneID="otr-Cf-FTe">
+            <objects>
+                <viewController id="Z4e-Pf-rbe" customClass="SeshhFeedVC" customModule="SeshhSocial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rk6-Ld-ex8"/>
+                        <viewControllerLayoutGuide type="bottom" id="msG-Zs-8rs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2KV-h3-RQK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kB5-cJ-9F2" customClass="HeaderView" customModule="SeshhSocial" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="343" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newseshhlogocropped" translatesAutoresizingMaskIntoConstraints="NO" id="qtM-xB-q4t">
+                                        <rect key="frame" x="72" y="3" width="200" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="G27-UO-6CM"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPO-AA-jtP" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
+                                        <rect key="frame" x="270" y="15" width="65" height="30"/>
+                                        <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="UJJ-uM-lbu"/>
+                                            <constraint firstAttribute="width" constant="65" id="ZGp-gF-O9o"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="11"/>
+                                        <state key="normal" title="HOME">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="cPO-AA-jtP" firstAttribute="centerY" secondItem="kB5-cJ-9F2" secondAttribute="centerY" id="1QI-yO-gbs"/>
+                                    <constraint firstAttribute="bottom" secondItem="qtM-xB-q4t" secondAttribute="bottom" constant="3" id="2iv-3O-iRU"/>
+                                    <constraint firstItem="qtM-xB-q4t" firstAttribute="top" secondItem="kB5-cJ-9F2" secondAttribute="top" constant="3" id="Ing-ak-TV8"/>
+                                    <constraint firstAttribute="trailing" secondItem="cPO-AA-jtP" secondAttribute="trailing" constant="8" id="Vkd-on-Meh"/>
+                                    <constraint firstItem="qtM-xB-q4t" firstAttribute="centerX" secondItem="kB5-cJ-9F2" secondAttribute="centerX" id="itw-oW-WbB"/>
+                                    <constraint firstAttribute="height" constant="60" id="seD-qe-J6Y"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLb-vL-LrQ" customClass="StandardDisplayView" customModule="SeshhSocial" customModuleProvider="target">
+                                <rect key="frame" x="16" y="110" width="343" height="557"/>
+                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kB5-cJ-9F2" firstAttribute="top" secondItem="Rk6-Ld-ex8" secondAttribute="bottom" id="3r7-nG-6WV"/>
+                            <constraint firstItem="msG-Zs-8rs" firstAttribute="top" secondItem="NLb-vL-LrQ" secondAttribute="bottom" id="XmL-Bo-oVJ"/>
+                            <constraint firstItem="NLb-vL-LrQ" firstAttribute="leading" secondItem="2KV-h3-RQK" secondAttribute="leadingMargin" id="fYP-p0-Ubo"/>
+                            <constraint firstItem="kB5-cJ-9F2" firstAttribute="leading" secondItem="2KV-h3-RQK" secondAttribute="leadingMargin" id="h8C-Km-mzg"/>
+                            <constraint firstItem="kB5-cJ-9F2" firstAttribute="trailing" secondItem="2KV-h3-RQK" secondAttribute="trailingMargin" id="j0K-B2-C71"/>
+                            <constraint firstItem="NLb-vL-LrQ" firstAttribute="top" secondItem="kB5-cJ-9F2" secondAttribute="bottom" constant="30" id="lQw-BT-XYK"/>
+                            <constraint firstItem="NLb-vL-LrQ" firstAttribute="trailing" secondItem="2KV-h3-RQK" secondAttribute="trailingMargin" id="lTe-4c-5xW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PAV-I0-E4Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798" y="730"/>
+        </scene>
+        <!--Check InVC-->
+        <scene sceneID="ofb-cC-24e">
+            <objects>
+                <viewController id="6qb-Mx-qSp" customClass="CheckInVC" customModule="SeshhSocial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IZu-FT-7Kn"/>
+                        <viewControllerLayoutGuide type="bottom" id="9uo-2y-lyB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jAJ-jW-Aaj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zb-U8-wSZ" customClass="HeaderView" customModule="SeshhSocial" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="343" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newseshhlogocropped" translatesAutoresizingMaskIntoConstraints="NO" id="hsc-0g-cfi">
+                                        <rect key="frame" x="72" y="3" width="200" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="erS-2L-GQt"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuJ-0H-ueo" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
+                                        <rect key="frame" x="270" y="15" width="65" height="30"/>
+                                        <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="b1f-cN-WYa"/>
+                                            <constraint firstAttribute="width" constant="65" id="prK-kL-nbh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="11"/>
+                                        <state key="normal" title="HOME">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hsc-0g-cfi" firstAttribute="centerX" secondItem="9zb-U8-wSZ" secondAttribute="centerX" id="Ado-Jv-NVF"/>
+                                    <constraint firstItem="vuJ-0H-ueo" firstAttribute="centerY" secondItem="9zb-U8-wSZ" secondAttribute="centerY" id="VSq-SR-8Qw"/>
+                                    <constraint firstItem="hsc-0g-cfi" firstAttribute="top" secondItem="9zb-U8-wSZ" secondAttribute="top" constant="3" id="XOP-G2-kFa"/>
+                                    <constraint firstAttribute="trailing" secondItem="vuJ-0H-ueo" secondAttribute="trailing" constant="8" id="mnq-FL-36D"/>
+                                    <constraint firstAttribute="height" constant="60" id="pbA-Zo-VJ2"/>
+                                    <constraint firstAttribute="bottom" secondItem="hsc-0g-cfi" secondAttribute="bottom" constant="3" id="ywl-B6-z4h"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hh8-zR-7Hx" customClass="StandardDisplayView" customModule="SeshhSocial" customModuleProvider="target">
+                                <rect key="frame" x="16" y="110" width="343" height="557"/>
+                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hh8-zR-7Hx" firstAttribute="top" secondItem="9zb-U8-wSZ" secondAttribute="bottom" constant="30" id="2Yh-7t-6g5"/>
+                            <constraint firstItem="hh8-zR-7Hx" firstAttribute="trailing" secondItem="jAJ-jW-Aaj" secondAttribute="trailingMargin" id="6G0-LG-zjc"/>
+                            <constraint firstItem="9zb-U8-wSZ" firstAttribute="leading" secondItem="jAJ-jW-Aaj" secondAttribute="leadingMargin" id="860-Qt-XTi"/>
+                            <constraint firstItem="9uo-2y-lyB" firstAttribute="top" secondItem="hh8-zR-7Hx" secondAttribute="bottom" id="Uzv-CE-7xu"/>
+                            <constraint firstItem="9zb-U8-wSZ" firstAttribute="top" secondItem="IZu-FT-7Kn" secondAttribute="bottom" id="WVz-3a-8W9"/>
+                            <constraint firstItem="hh8-zR-7Hx" firstAttribute="leading" secondItem="jAJ-jW-Aaj" secondAttribute="leadingMargin" id="XJ1-s7-ElT"/>
+                            <constraint firstItem="9zb-U8-wSZ" firstAttribute="trailing" secondItem="jAJ-jW-Aaj" secondAttribute="trailingMargin" id="zde-dm-EzG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jAx-yQ-DC6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="1424"/>
         </scene>
     </scenes>
     <resources>

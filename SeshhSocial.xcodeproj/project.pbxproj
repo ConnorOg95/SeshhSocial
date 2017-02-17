@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		63E3130E044BCA613F55A9CD /* Pods_SeshhSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C501B3324A29937CFFE91A74 /* Pods_SeshhSocial.framework */; };
 		CE0371911E52793C00828855 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0371901E52793C00828855 /* SignUpVC.swift */; };
+		CE0371931E567D1B00828855 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0371921E567D1B00828855 /* ProfileImageView.swift */; };
+		CE0371951E5749A300828855 /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0371941E5749A300828855 /* HomeScreenVC.swift */; };
+		CE0371971E5749CC00828855 /* SeshhFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0371961E5749CC00828855 /* SeshhFeedVC.swift */; };
+		CE0371991E5749E600828855 /* CheckInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0371981E5749E600828855 /* CheckInVC.swift */; };
 		CEFE81361E5213B50044B134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE81351E5213B50044B134 /* AppDelegate.swift */; };
 		CEFE81381E5213B50044B134 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE81371E5213B50044B134 /* SignInVC.swift */; };
 		CEFE813B1E5213B50044B134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFE81391E5213B50044B134 /* Main.storyboard */; };
@@ -25,6 +29,10 @@
 		5BC85F21E9E31774F25FE87F /* Pods-SeshhSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeshhSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeshhSocial/Pods-SeshhSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		C501B3324A29937CFFE91A74 /* Pods_SeshhSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeshhSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0371901E52793C00828855 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		CE0371921E567D1B00828855 /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
+		CE0371941E5749A300828855 /* HomeScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
+		CE0371961E5749CC00828855 /* SeshhFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeshhFeedVC.swift; sourceTree = "<group>"; };
+		CE0371981E5749E600828855 /* CheckInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInVC.swift; sourceTree = "<group>"; };
 		CEFE81321E5213B40044B134 /* SeshhSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeshhSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFE81351E5213B50044B134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEFE81371E5213B50044B134 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -117,6 +125,7 @@
 				CEFE814C1E5234CE0044B134 /* StandardDisplayView.swift */,
 				CEFE81511E523A890044B134 /* RoundButton.swift */,
 				CEFE81531E523D3C0044B134 /* ModifiedTextField.swift */,
+				CE0371921E567D1B00828855 /* ProfileImageView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -126,6 +135,9 @@
 			children = (
 				CEFE81371E5213B50044B134 /* SignInVC.swift */,
 				CE0371901E52793C00828855 /* SignUpVC.swift */,
+				CE0371941E5749A300828855 /* HomeScreenVC.swift */,
+				CE0371961E5749CC00828855 /* SeshhFeedVC.swift */,
+				CE0371981E5749E600828855 /* CheckInVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -263,13 +275,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0371931E567D1B00828855 /* ProfileImageView.swift in Sources */,
 				CE0371911E52793C00828855 /* SignUpVC.swift in Sources */,
+				CE0371971E5749CC00828855 /* SeshhFeedVC.swift in Sources */,
 				CEFE81381E5213B50044B134 /* SignInVC.swift in Sources */,
 				CEFE81521E523A890044B134 /* RoundButton.swift in Sources */,
+				CE0371991E5749E600828855 /* CheckInVC.swift in Sources */,
 				CEFE81501E52358A0044B134 /* Constants.swift in Sources */,
 				CEFE81361E5213B50044B134 /* AppDelegate.swift in Sources */,
 				CEFE81541E523D3C0044B134 /* ModifiedTextField.swift in Sources */,
 				CEFE814D1E5234CE0044B134 /* StandardDisplayView.swift in Sources */,
+				CE0371951E5749A300828855 /* HomeScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
