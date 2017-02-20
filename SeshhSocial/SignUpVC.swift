@@ -11,7 +11,7 @@ import Firebase
 
 class SignUpVC: UIViewController {
     
-    let databaseRef = FIRDatabase.database().reference(fromURL: "https://seshh-social.firebaseio.com/")
+//    let databaseRef = FIRDatabase.database().reference(fromURL: "https://seshh-social.firebaseio.com/")
 
     @IBOutlet weak var usernameTxtFld: ModifiedTextField!
     @IBOutlet weak var passwordTxtFld: ModifiedTextField!
@@ -49,23 +49,29 @@ class SignUpVC: UIViewController {
         }
         FIRAuth.auth()?.createUser(withEmail: confirmedEmail, password: confirmedPassword, completion: { (user, error) in
             if error != nil {
-                print("BAIT")
-                print(error!)
+                print("CONNOR: Failed to create user \(error)!")
                 return
+            } else {
+                print("CONNOR: Succesfully created user.")
+                if let user = user {
+                let userData = ["provider": user.providerID, "username": username]
+                self.completeSignUp(id: user.uid, userData: userData)
+                }
+                self.dismiss(animated: true, completion: nil)
             }
-            guard let uid = user?.uid else {
-                return
-            }
-            let userReference = self.databaseRef.child("users").child(uid)
-            let values = ["Username": username, "Email": confirmedEmail, "Password": confirmedPassword]
-            userReference.updateChildValues(values
-                , withCompletionBlock: { (error, ref) in
-                    if error != nil {
-                        print(error!)
-                        return
-                    }
-                    self.dismiss(animated: true, completion: nil)
-            })
+//            guard let uid = user?.uid else {
+//                return
+//            }
+//            let userReference = self.databaseRef.child("users").child(uid)
+//            let values = ["username": username, "email": confirmedEmail, "password": confirmedPassword]
+//            userReference.updateChildValues(values
+//                , withCompletionBlock: { (error, ref) in
+//                    if error != nil {
+//                        print(error!)
+//                        return
+//                    }
+//                    self.dismiss(animated: true, completion: nil)
+//            })
         })
     }
     @IBAction func signUpBtnPressed(_ sender: Any) {
@@ -74,11 +80,18 @@ class SignUpVC: UIViewController {
         
         if (passwordTxtFld.text != confirmedPasswordTxtFld.text) {
             print("CONNOR: Emails do not match")
+            // POP UP FOR PASSWORDS NOT MATCHING
         } else if (emailTxtFld.text != confirmedEmailTxtFld.text) {
             print("CONNOR: Passwords do not match")
+            // POP UP FOR EMAILS NOT MATCHING
         } else {
         signUp()
         }
+    }
+    
+    func completeSignUp(id: String, userData: Dictionary<String, String>) {
+        DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
+        
     }
 }
 

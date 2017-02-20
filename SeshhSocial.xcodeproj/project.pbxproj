@@ -13,6 +13,9 @@
 		CE0371951E5749A300828855 /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0371941E5749A300828855 /* HomeScreenVC.swift */; };
 		CE0371971E5749CC00828855 /* SeshhFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0371961E5749CC00828855 /* SeshhFeedVC.swift */; };
 		CE0371991E5749E600828855 /* CheckInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0371981E5749E600828855 /* CheckInVC.swift */; };
+		CE03719B1E59799E00828855 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03719A1E59799E00828855 /* PostCell.swift */; };
+		CE03719E1E5A1FAD00828855 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03719D1E5A1FAD00828855 /* DataService.swift */; };
+		CE0371A01E5A454900828855 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03719F1E5A454900828855 /* Post.swift */; };
 		CEFE81361E5213B50044B134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE81351E5213B50044B134 /* AppDelegate.swift */; };
 		CEFE81381E5213B50044B134 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE81371E5213B50044B134 /* SignInVC.swift */; };
 		CEFE813B1E5213B50044B134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFE81391E5213B50044B134 /* Main.storyboard */; };
@@ -33,6 +36,9 @@
 		CE0371941E5749A300828855 /* HomeScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
 		CE0371961E5749CC00828855 /* SeshhFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeshhFeedVC.swift; sourceTree = "<group>"; };
 		CE0371981E5749E600828855 /* CheckInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInVC.swift; sourceTree = "<group>"; };
+		CE03719A1E59799E00828855 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		CE03719D1E5A1FAD00828855 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		CE03719F1E5A454900828855 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CEFE81321E5213B40044B134 /* SeshhSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeshhSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFE81351E5213B50044B134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEFE81371E5213B50044B134 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -77,6 +83,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CE03719C1E5A1F7F00828855 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE03719D1E5A1FAD00828855 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		CEFE81291E5213B40044B134 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +112,7 @@
 		CEFE81341E5213B40044B134 /* SeshhSocial */ = {
 			isa = PBXGroup;
 			children = (
+				CE03719C1E5A1F7F00828855 /* Services */,
 				CEFE814E1E5235770044B134 /* Util */,
 				CEFE814B1E52184C0044B134 /* Controller */,
 				CEFE814A1E5218460044B134 /* View */,
@@ -115,6 +130,7 @@
 		CEFE81491E52183F0044B134 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE03719F1E5A454900828855 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -126,6 +142,7 @@
 				CEFE81511E523A890044B134 /* RoundButton.swift */,
 				CEFE81531E523D3C0044B134 /* ModifiedTextField.swift */,
 				CE0371921E567D1B00828855 /* ProfileImageView.swift */,
+				CE03719A1E59799E00828855 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -276,9 +293,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0371931E567D1B00828855 /* ProfileImageView.swift in Sources */,
+				CE03719E1E5A1FAD00828855 /* DataService.swift in Sources */,
 				CE0371911E52793C00828855 /* SignUpVC.swift in Sources */,
 				CE0371971E5749CC00828855 /* SeshhFeedVC.swift in Sources */,
 				CEFE81381E5213B50044B134 /* SignInVC.swift in Sources */,
+				CE0371A01E5A454900828855 /* Post.swift in Sources */,
 				CEFE81521E523A890044B134 /* RoundButton.swift in Sources */,
 				CE0371991E5749E600828855 /* CheckInVC.swift in Sources */,
 				CEFE81501E52358A0044B134 /* Constants.swift in Sources */,
@@ -286,6 +305,7 @@
 				CEFE81541E523D3C0044B134 /* ModifiedTextField.swift in Sources */,
 				CEFE814D1E5234CE0044B134 /* StandardDisplayView.swift in Sources */,
 				CE0371951E5749A300828855 /* HomeScreenVC.swift in Sources */,
+				CE03719B1E59799E00828855 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
