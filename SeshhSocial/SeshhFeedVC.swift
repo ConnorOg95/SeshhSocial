@@ -25,6 +25,9 @@ class SeshhFeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         seshhTableView.dataSource = self
         
         DataService.ds.REF_SESSHS.observe(.value, with: { (snapshot) in
+            
+            self.posts = []
+            
             if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
                 for snap in snapshot {
                     print("CONNOR: SNAP \(snap)")
@@ -55,11 +58,10 @@ class SeshhFeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         
             if let img = SeshhFeedVC.imageCache.object(forKey: post.seshhImgURL as NSString) {
                 cell.configureCell(post: post, img: img)
-                return cell
             } else {
                 cell.configureCell(post: post)
-                return cell
             }
+            return cell
         } else {
             return PostCell()
         }

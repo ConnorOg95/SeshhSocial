@@ -11,7 +11,6 @@ import Firebase
 
 class SignUpVC: UIViewController {
     
-//    let databaseRef = FIRDatabase.database().reference(fromURL: "https://seshh-social.firebaseio.com/")
 
     @IBOutlet weak var usernameTxtFld: ModifiedTextField!
     @IBOutlet weak var passwordTxtFld: ModifiedTextField!
@@ -20,13 +19,18 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var confirmedEmailTxtFld: ModifiedTextField!
     @IBOutlet weak var firstNameTxtFld: ModifiedTextField!
     @IBOutlet weak var lastNameTxtFld: ModifiedTextField!
-    @IBOutlet weak var DOBTxtFld: ModifiedTextField!
-    @IBOutlet weak var descriptionTxtFld: ModifiedTextField!
+    //NEEDS TO BE A DATE
+    @IBOutlet weak var DOBBtn: UIButton!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var signUpBtn: UIButton!
+    @IBOutlet weak var informationLbl: UILabel!
+    @IBOutlet weak var usernameUnderline: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        datePicker.addTarget(self, action: #selector(datePickerChanged(datePicker:)), for: UIControlEvents.valueChanged)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,26 +39,45 @@ class SignUpVC: UIViewController {
     }
     
     func signUp() {
-        guard let username = usernameTxtFld.text else {
+        guard let username = usernameTxtFld.text, username != "" else {
+            // HIGHLIGHT TO USER
+            self.usernameUnderline.backgroundColor = UIColor(colorLiteralRed: 1.0, green: 0, blue: 0, alpha: 1.0)
             print("CONNOR: Username signup error")
             return
         }
-        guard let confirmedEmail = confirmedEmailTxtFld.text else {
+        guard let email = confirmedEmailTxtFld.text, email != "" else {
+            // HIGHLIGHT TO USER
             print("CONNOR: Confirmed email signup error")
             return
         }
-        guard let confirmedPassword = confirmedPasswordTxtFld.text else {
+        guard let password = confirmedPasswordTxtFld.text, password != "" else {
+            // HIGHLIGHT TO USER
             print("CONNOR: Confirmed password signup error")
             return
         }
-        FIRAuth.auth()?.createUser(withEmail: confirmedEmail, password: confirmedPassword, completion: { (user, error) in
+        guard let firstName = firstNameTxtFld.text, firstName != "" else {
+            // HIGHLIGHT TO USER
+            print("CONNOR: Confirmed first name signup error")
+            return
+        }
+        guard let lastName = lastNameTxtFld.text, lastName != "" else {
+            // HIGHLIGHT TO USER
+            print("CONNOR: Confirmed last name signup error")
+            return
+        }
+        guard let DOB = DOBBtn.titleLabel?.text, DOB != "" else {
+            // HIGHLIGHT TO USER
+            print("CONNOR: Confirmed DOB signup error")
+            return
+        }
+        FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
             if error != nil {
                 print("CONNOR: Failed to create user \(error)!")
                 return
             } else {
                 print("CONNOR: Succesfully created user.")
                 if let user = user {
-                let userData = ["provider": user.providerID, "username": username]
+                let userData = ["provider": user.providerID, "username": username, "firstName": firstName, "lastName": lastName, "email": email, "DOB": DOB]
                 self.completeSignUp(id: user.uid, userData: userData)
                 }
                 self.dismiss(animated: true, completion: nil)
@@ -76,13 +99,11 @@ class SignUpVC: UIViewController {
     }
     @IBAction func signUpBtnPressed(_ sender: Any) {
         
-        //Check if any of the fields are empty - Needs to be added
-        
         if (passwordTxtFld.text != confirmedPasswordTxtFld.text) {
-            print("CONNOR: Emails do not match")
+            print("CONNOR: Passwords do not match")
             // POP UP FOR PASSWORDS NOT MATCHING
         } else if (emailTxtFld.text != confirmedEmailTxtFld.text) {
-            print("CONNOR: Passwords do not match")
+            print("CONNOR: Emails do not match")
             // POP UP FOR EMAILS NOT MATCHING
         } else {
         signUp()
@@ -93,6 +114,35 @@ class SignUpVC: UIViewController {
         DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
         
     }
+    
+    @IBAction func DOBBtnPressed(_ sender: Any) {
+        datePicker.datePickerMode = UIDatePickerMode.date
+        datePicker.isHidden = false
+        signUpBtn.isHidden = true
+        informationLbl.isHidden = true
+    }
+    
+    func dateFormat() {
+        
+//        datePicker.datePickerMode = UIDatePickerMode.date
+        
+        let dateFormatter = DateFormatter()
+        let short = DateFormatter.Style.short
+        dateFormatter.dateStyle = short
+        dateFormatter.dateFormat = "dd/MM/YYYY"
+        let strDate = dateFormatter.string(from: datePicker.date)
+        DOBBtn.titleLabel!.text = strDate
+    }
+    
+    func datePickerChanged(datePicker:UIDatePicker) {
+        
+//        self.DOBBtn.titleLabel?.textColor = UIColor(colorLiteralRed: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        dateFormat()
+        datePicker.isHidden = true
+        signUpBtn.isHidden = false
+    }
+    
+    
 }
 
 

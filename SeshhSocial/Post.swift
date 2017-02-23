@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Firebase
 
 class Post {
     
@@ -17,6 +18,11 @@ class Post {
     private var _seshhLikes: Int!
     private var _seshhImgURL: String!
     private var _seshhPostKey: String!
+    private var _seshhPostRef: FIRDatabaseReference!
+    private var _seshhUsername: String!
+    private var _seshhProfileImgURL: String!
+    
+    var userRef: FIRDatabaseReference!
     
     var seshhTitle: String {
         return _seshhTitle
@@ -46,13 +52,23 @@ class Post {
         return _seshhPostKey
     }
     
-    init(seshhTitle: String, seshhCategory: String, seshhLocation: String, seshhDescription: String, seshhImgURL: String, seshhLikes: Int) {
+    var seshhUsername: String {
+        return _seshhUsername
+    }
+    
+//    var seshhProfileImgURL: String {
+//        return _seshhProfileImgURL
+//    }
+    
+    init(seshhTitle: String, seshhCategory: String, seshhLocation: String, seshhDescription: String, seshhImgURL: String, seshhLikes: Int, seshhUsername: String) {
         self._seshhTitle = seshhTitle
         self._seshhCategory = seshhCategory
         self._seshhLocation = seshhLocation
         self._seshhDescription = seshhDescription
         self._seshhImgURL = seshhImgURL
         self._seshhLikes = seshhLikes
+        self._seshhUsername = seshhUsername
+//        self._seshhProfileImgURL = seshhProfileImgURL
     }
     
     init(seshhPostKey: String, postData: Dictionary<String, AnyObject>) {
@@ -81,6 +97,40 @@ class Post {
         if let seshhLocation = postData["location"] as? String {
             self._seshhLocation = seshhLocation
         }
+        
+        if let  postUser = postData["uid"] as? String {
+            print("CONNOR: uid for post user \(postUser)")
+            userRef = DataService.ds.REF_USER_CURRENT.child("info")
+            userRef.observeSingleEvent(of: .value, with: { (snapshot) in
+                if let value = snapshot.value as? Dictionary<String, AnyObject> {
+                    let username = value["username"] as! String
+                    self._seshhUsername = username
+                    print("CONNOR: usernameee \(username)")
+                }
+            })
+        }
+        
+//        if let seshhUsername = postData["username"] as? String {
+//            self._seshhUsername = seshhUsername
+//        }
+//        
+//        if let seshhProfileImgURL = postData["profileImgURL"] as? String {
+//            self._seshhProfileImgURL = seshhProfileImgURL
+//        }
+        
+        _seshhPostRef = DataService.ds.REF_SESSHS.child(_seshhPostKey)
+        
+    }
+    
+    func adjustLikes(addLike: Bool) {
+        
+        if addLike {
+            _seshhLikes = _seshhLikes + 1
+        } else {
+            _seshhLikes = _seshhLikes - 1
+        }
+        _seshhPostRef.child("likes").setValue(_seshhLikes)
+        
         
     }
 }

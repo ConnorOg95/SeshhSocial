@@ -16,6 +16,14 @@
 		CE03719B1E59799E00828855 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03719A1E59799E00828855 /* PostCell.swift */; };
 		CE03719E1E5A1FAD00828855 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03719D1E5A1FAD00828855 /* DataService.swift */; };
 		CE0371A01E5A454900828855 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03719F1E5A454900828855 /* Post.swift */; };
+		CE0371C21E5D51D400828855 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0371C11E5D51D400828855 /* HeaderView.swift */; };
+		CEB04B0B1E5E6F090081293E /* WhosOnTheSeshhVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB04B0A1E5E6F090081293E /* WhosOnTheSeshhVC.swift */; };
+		CEB04B1E1E5E7D420081293E /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB04B151E5E7D420081293E /* GeoFire.m */; };
+		CEB04B1F1E5E7D420081293E /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB04B171E5E7D420081293E /* GFBase32Utils.m */; };
+		CEB04B201E5E7D420081293E /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB04B191E5E7D420081293E /* GFGeoHash.m */; };
+		CEB04B211E5E7D420081293E /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB04B1B1E5E7D420081293E /* GFGeoHashQuery.m */; };
+		CEB04B221E5E7D420081293E /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB04B1D1E5E7D420081293E /* GFQuery.m */; };
+		CEB04B251E5F803C0081293E /* SeshhAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB04B241E5F803C0081293E /* SeshhAnnotation.swift */; };
 		CEFE81361E5213B50044B134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE81351E5213B50044B134 /* AppDelegate.swift */; };
 		CEFE81381E5213B50044B134 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE81371E5213B50044B134 /* SignInVC.swift */; };
 		CEFE813B1E5213B50044B134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFE81391E5213B50044B134 /* Main.storyboard */; };
@@ -39,6 +47,25 @@
 		CE03719A1E59799E00828855 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		CE03719D1E5A1FAD00828855 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		CE03719F1E5A454900828855 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		CE0371C11E5D51D400828855 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		CEB04B0A1E5E6F090081293E /* WhosOnTheSeshhVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhosOnTheSeshhVC.swift; sourceTree = "<group>"; };
+		CEB04B0E1E5E7D420081293E /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
+		CEB04B0F1E5E7D420081293E /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
+		CEB04B101E5E7D420081293E /* GFQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFQuery.h; sourceTree = "<group>"; };
+		CEB04B111E5E7D420081293E /* GFRegionQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRegionQuery.h; sourceTree = "<group>"; };
+		CEB04B121E5E7D420081293E /* GeoFire-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire-Prefix.pch"; sourceTree = "<group>"; };
+		CEB04B141E5E7D420081293E /* GeoFire+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire+Private.h"; sourceTree = "<group>"; };
+		CEB04B151E5E7D420081293E /* GeoFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoFire.m; sourceTree = "<group>"; };
+		CEB04B161E5E7D420081293E /* GFBase32Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBase32Utils.h; sourceTree = "<group>"; };
+		CEB04B171E5E7D420081293E /* GFBase32Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBase32Utils.m; sourceTree = "<group>"; };
+		CEB04B181E5E7D420081293E /* GFGeoHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHash.h; sourceTree = "<group>"; };
+		CEB04B191E5E7D420081293E /* GFGeoHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHash.m; sourceTree = "<group>"; };
+		CEB04B1A1E5E7D420081293E /* GFGeoHashQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHashQuery.h; sourceTree = "<group>"; };
+		CEB04B1B1E5E7D420081293E /* GFGeoHashQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHashQuery.m; sourceTree = "<group>"; };
+		CEB04B1C1E5E7D420081293E /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
+		CEB04B1D1E5E7D420081293E /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
+		CEB04B231E5E7EEF0081293E /* SeshhSocial-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SeshhSocial-Bridging-Header.h"; sourceTree = "<group>"; };
+		CEB04B241E5F803C0081293E /* SeshhAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeshhAnnotation.swift; sourceTree = "<group>"; };
 		CEFE81321E5213B40044B134 /* SeshhSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeshhSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFE81351E5213B50044B134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEFE81371E5213B50044B134 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -91,6 +118,44 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		CEB04B0C1E5E7D420081293E /* GeoFire */ = {
+			isa = PBXGroup;
+			children = (
+				CEB04B0D1E5E7D420081293E /* API */,
+				CEB04B121E5E7D420081293E /* GeoFire-Prefix.pch */,
+				CEB04B131E5E7D420081293E /* Implementation */,
+			);
+			path = GeoFire;
+			sourceTree = "<group>";
+		};
+		CEB04B0D1E5E7D420081293E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CEB04B0E1E5E7D420081293E /* GeoFire.h */,
+				CEB04B0F1E5E7D420081293E /* GFCircleQuery.h */,
+				CEB04B101E5E7D420081293E /* GFQuery.h */,
+				CEB04B111E5E7D420081293E /* GFRegionQuery.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CEB04B131E5E7D420081293E /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				CEB04B141E5E7D420081293E /* GeoFire+Private.h */,
+				CEB04B151E5E7D420081293E /* GeoFire.m */,
+				CEB04B161E5E7D420081293E /* GFBase32Utils.h */,
+				CEB04B171E5E7D420081293E /* GFBase32Utils.m */,
+				CEB04B181E5E7D420081293E /* GFGeoHash.h */,
+				CEB04B191E5E7D420081293E /* GFGeoHash.m */,
+				CEB04B1A1E5E7D420081293E /* GFGeoHashQuery.h */,
+				CEB04B1B1E5E7D420081293E /* GFGeoHashQuery.m */,
+				CEB04B1C1E5E7D420081293E /* GFQuery+Private.h */,
+				CEB04B1D1E5E7D420081293E /* GFQuery.m */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
 		CEFE81291E5213B40044B134 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +177,7 @@
 		CEFE81341E5213B40044B134 /* SeshhSocial */ = {
 			isa = PBXGroup;
 			children = (
+				CEB04B0C1E5E7D420081293E /* GeoFire */,
 				CE03719C1E5A1F7F00828855 /* Services */,
 				CEFE814E1E5235770044B134 /* Util */,
 				CEFE814B1E52184C0044B134 /* Controller */,
@@ -123,6 +189,7 @@
 				CEFE813E1E5213B50044B134 /* LaunchScreen.storyboard */,
 				CEFE81471E5214B00044B134 /* GoogleService-Info.plist */,
 				CEFE81411E5213B50044B134 /* Info.plist */,
+				CEB04B231E5E7EEF0081293E /* SeshhSocial-Bridging-Header.h */,
 			);
 			path = SeshhSocial;
 			sourceTree = "<group>";
@@ -131,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				CE03719F1E5A454900828855 /* Post.swift */,
+				CEB04B241E5F803C0081293E /* SeshhAnnotation.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -143,6 +211,7 @@
 				CEFE81531E523D3C0044B134 /* ModifiedTextField.swift */,
 				CE0371921E567D1B00828855 /* ProfileImageView.swift */,
 				CE03719A1E59799E00828855 /* PostCell.swift */,
+				CE0371C11E5D51D400828855 /* HeaderView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -155,6 +224,7 @@
 				CE0371961E5749CC00828855 /* SeshhFeedVC.swift */,
 				CE0371981E5749E600828855 /* CheckInVC.swift */,
 				CE0371901E52793C00828855 /* SignUpVC.swift */,
+				CEB04B0A1E5E6F090081293E /* WhosOnTheSeshhVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -293,15 +363,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0371931E567D1B00828855 /* ProfileImageView.swift in Sources */,
+				CEB04B1E1E5E7D420081293E /* GeoFire.m in Sources */,
 				CE03719E1E5A1FAD00828855 /* DataService.swift in Sources */,
 				CE0371911E52793C00828855 /* SignUpVC.swift in Sources */,
 				CE0371971E5749CC00828855 /* SeshhFeedVC.swift in Sources */,
+				CEB04B0B1E5E6F090081293E /* WhosOnTheSeshhVC.swift in Sources */,
+				CEB04B221E5E7D420081293E /* GFQuery.m in Sources */,
 				CEFE81381E5213B50044B134 /* SignInVC.swift in Sources */,
 				CE0371A01E5A454900828855 /* Post.swift in Sources */,
+				CEB04B1F1E5E7D420081293E /* GFBase32Utils.m in Sources */,
 				CEFE81521E523A890044B134 /* RoundButton.swift in Sources */,
 				CE0371991E5749E600828855 /* CheckInVC.swift in Sources */,
 				CEFE81501E52358A0044B134 /* Constants.swift in Sources */,
+				CEB04B201E5E7D420081293E /* GFGeoHash.m in Sources */,
+				CEB04B251E5F803C0081293E /* SeshhAnnotation.swift in Sources */,
+				CEB04B211E5E7D420081293E /* GFGeoHashQuery.m in Sources */,
 				CEFE81361E5213B50044B134 /* AppDelegate.swift in Sources */,
+				CE0371C21E5D51D400828855 /* HeaderView.swift in Sources */,
 				CEFE81541E523D3C0044B134 /* ModifiedTextField.swift in Sources */,
 				CEFE814D1E5234CE0044B134 /* StandardDisplayView.swift in Sources */,
 				CE0371951E5749A300828855 /* HomeScreenVC.swift in Sources */,
@@ -434,6 +512,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.OGC.SeshhSocial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SeshhSocial/SeshhSocial-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -448,6 +527,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.OGC.SeshhSocial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SeshhSocial/SeshhSocial-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

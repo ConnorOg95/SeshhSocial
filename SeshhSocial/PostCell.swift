@@ -19,21 +19,48 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var seshhPhotoImg: UIImageView!
     @IBOutlet weak var seshhLikesLbl: UILabel!
     @IBOutlet weak var seshhLocationLbl: UILabel!
+    @IBOutlet weak var starImg: UIImageView!
+    @IBOutlet weak var seshhCategoryImg: ProfileImageView!
     
     var post: Post!
+    var likesRef: FIRDatabaseReference!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(likeTapped))
+        tap.numberOfTapsRequired = 1
+        starImg.addGestureRecognizer(tap)
+        starImg.isUserInteractionEnabled = true
+        
     }
     
     func configureCell(post: Post, img: UIImage? = nil) {
+        
         self.post = post
+        
+        likesRef = DataService.ds.REF_USER_CURRENT.child("likes").child(post.seshhPostKey)
+        
         self.seshhDescriptionTxtView.text = post.seshhDescription
         self.seshhLikesLbl.text = "\(post.seshhLikes)"
         self.seshhTitleLbl.text = post.seshhTitle
         self.seshhLocationLbl.text = post.seshhLocation
         self.seshhCategoryLbl.text = post.seshhCategory
+        self.nameLbl.text = post.seshhUsername
+        
+        if post.seshhCategory == "Drinks Seshh" {
+            self.seshhCategoryImg.image = UIImage(named: "DrinksCatIcon")
+        } else if post.seshhCategory == "Active Seshh" {
+            self.seshhCategoryImg.image = UIImage(named: "ActiveCatIcon")
+        } else if post.seshhCategory == "Music Seshh" {
+            self.seshhCategoryImg.image = UIImage(named: "MusicCatIcon")
+        } else if post.seshhCategory == "Recreational Seshh" {
+            self.seshhCategoryImg.image = UIImage(named: "RecreationalCatIcon")
+        } else if post.seshhCategory == "Entertainment Seshh" {
+            self.seshhCategoryImg.image = UIImage(named: "EntertainmentCatIcon")
+        } else if post.seshhCategory == "Sports Seshh" {
+            self.seshhCategoryImg.image = UIImage(named: "SportsCatIcon")
+        }
         
         if img != nil {
             self.seshhPhotoImg.image = img
@@ -53,5 +80,28 @@ class PostCell: UITableViewCell {
                     }
                     })
         }
+        
+        likesRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            if let _ = snapshot.value as? NSNull {
+                self.starImg.image = UIImage(named: "StarIcon")
+            } else {
+                self.starImg.image = UIImage(named: "GoldStarIcon")
+            }
+        })
+    }
+    
+    func likeTapped(sender: UITapGestureRecognizer) {
+    
+        likesRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            if let _ = snapshot.value as? NSNull {
+                self.starImg.image = UIImage(named: "GoldStarIcon")
+                self.post.adjustLikes(addLike: true)
+                self.likesRef.setValue(true)
+            } else {
+                self.starImg.image = UIImage(named: "StarIcon")
+                self.post.adjustLikes(addLike: false)
+                self.likesRef.removeValue()
+            }
+        })
     }
 }
