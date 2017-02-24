@@ -98,22 +98,10 @@ class Post {
             self._seshhLocation = seshhLocation
         }
         
-        if let  postUser = postData["uid"] as? String {
-            print("CONNOR: uid for post user \(postUser)")
-            userRef = DataService.ds.REF_USER_CURRENT.child("info")
-            userRef.observeSingleEvent(of: .value, with: { (snapshot) in
-                if let value = snapshot.value as? Dictionary<String, AnyObject> {
-                    let username = value["username"] as! String
-                    self._seshhUsername = username
-                    print("CONNOR: usernameee \(username)")
-                }
-            })
+        if let seshhUsername = postData["username"] as? String {
+            self._seshhUsername = seshhUsername
         }
-        
-//        if let seshhUsername = postData["username"] as? String {
-//            self._seshhUsername = seshhUsername
-//        }
-//        
+//
 //        if let seshhProfileImgURL = postData["profileImgURL"] as? String {
 //            self._seshhProfileImgURL = seshhProfileImgURL
 //        }

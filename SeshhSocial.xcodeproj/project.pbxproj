@@ -24,6 +24,7 @@
 		CEB04B211E5E7D420081293E /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB04B1B1E5E7D420081293E /* GFGeoHashQuery.m */; };
 		CEB04B221E5E7D420081293E /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB04B1D1E5E7D420081293E /* GFQuery.m */; };
 		CEB04B251E5F803C0081293E /* SeshhAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB04B241E5F803C0081293E /* SeshhAnnotation.swift */; };
+		CEB04B271E5FE9D00081293E /* SeshhScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB04B261E5FE9D00081293E /* SeshhScreenVC.swift */; };
 		CEFE81361E5213B50044B134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE81351E5213B50044B134 /* AppDelegate.swift */; };
 		CEFE81381E5213B50044B134 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE81371E5213B50044B134 /* SignInVC.swift */; };
 		CEFE813B1E5213B50044B134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFE81391E5213B50044B134 /* Main.storyboard */; };
@@ -66,6 +67,7 @@
 		CEB04B1D1E5E7D420081293E /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		CEB04B231E5E7EEF0081293E /* SeshhSocial-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SeshhSocial-Bridging-Header.h"; sourceTree = "<group>"; };
 		CEB04B241E5F803C0081293E /* SeshhAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeshhAnnotation.swift; sourceTree = "<group>"; };
+		CEB04B261E5FE9D00081293E /* SeshhScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeshhScreenVC.swift; sourceTree = "<group>"; };
 		CEFE81321E5213B40044B134 /* SeshhSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeshhSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFE81351E5213B50044B134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEFE81371E5213B50044B134 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				CE0371981E5749E600828855 /* CheckInVC.swift */,
 				CE0371901E52793C00828855 /* SignUpVC.swift */,
 				CEB04B0A1E5E6F090081293E /* WhosOnTheSeshhVC.swift */,
+				CEB04B261E5FE9D00081293E /* SeshhScreenVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				CE0371911E52793C00828855 /* SignUpVC.swift in Sources */,
 				CE0371971E5749CC00828855 /* SeshhFeedVC.swift in Sources */,
 				CEB04B0B1E5E6F090081293E /* WhosOnTheSeshhVC.swift in Sources */,
+				CEB04B271E5FE9D00081293E /* SeshhScreenVC.swift in Sources */,
 				CEB04B221E5E7D420081293E /* GFQuery.m in Sources */,
 				CEFE81381E5213B50044B134 /* SignInVC.swift in Sources */,
 				CE0371A01E5A454900828855 /* Post.swift in Sources */,

@@ -17,7 +17,7 @@ class WhosOnTheSeshhVC: UIViewController, MKMapViewDelegate, CLLocationManagerDe
     let locationManager = CLLocationManager()
     var geoFire: GeoFire!
     var mapHasCentredOnce = false
-    var geoFireRef: FIRDatabaseReference
+    var geoFireRef: FIRDatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +26,7 @@ class WhosOnTheSeshhVC: UIViewController, MKMapViewDelegate, CLLocationManagerDe
         mapView.userTrackingMode = MKUserTrackingMode.follow
         
         geoFireRef = FIRDatabase.database().reference()
+//         geoFireRef = REF_SESHHS.child("location")
         geoFire = GeoFire(firebaseRef: geoFireRef)
 
     }
@@ -77,7 +78,7 @@ class WhosOnTheSeshhVC: UIViewController, MKMapViewDelegate, CLLocationManagerDe
         
         if annotation.isKind(of: MKUserLocation.self) {
             annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "User")
-            annotationView?.image = UIImage(named: "StickmanIcon")
+            annotationView?.image = UIImage(named: "profile1")
         } else if let deqAnno = mapView.dequeueReusableAnnotationView(withIdentifier: annoIdentifier) {
             annotationView = deqAnno
             annotationView?.annotation = annotation
@@ -86,6 +87,7 @@ class WhosOnTheSeshhVC: UIViewController, MKMapViewDelegate, CLLocationManagerDe
             av.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
             annotationView = av
         }
+        
         // MAP MARKER ANNOTATION
         if let annotationView = annotationView, let anno = annotation as? SeshhAnnotation {
             
@@ -93,7 +95,7 @@ class WhosOnTheSeshhVC: UIViewController, MKMapViewDelegate, CLLocationManagerDe
             annotationView.image = UIImage(named: "\(anno.seshhNumber)")
             let btn = UIButton()
             btn.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-            btn.setImage(UIImage(named: ""), for: .normal)
+            btn.setImage(UIImage(named: "seshhlogo350frcropped"), for: .normal)
             annotationView.rightCalloutAccessoryView = btn
         }
         return annotationView

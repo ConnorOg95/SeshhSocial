@@ -13,7 +13,6 @@ class PostCell: UITableViewCell {
     
     @IBOutlet weak var profileImg: UIImageView!
     @IBOutlet weak var nameLbl: UILabel!
-    @IBOutlet weak var seshhCategoryLbl: UILabel!
     @IBOutlet weak var seshhTitleLbl: UILabel!
     @IBOutlet weak var seshhDescriptionTxtView: UITextView!
     @IBOutlet weak var seshhPhotoImg: UIImageView!
@@ -45,7 +44,6 @@ class PostCell: UITableViewCell {
         self.seshhLikesLbl.text = "\(post.seshhLikes)"
         self.seshhTitleLbl.text = post.seshhTitle
         self.seshhLocationLbl.text = post.seshhLocation
-        self.seshhCategoryLbl.text = post.seshhCategory
         self.nameLbl.text = post.seshhUsername
         
         if post.seshhCategory == "Drinks Seshh" {

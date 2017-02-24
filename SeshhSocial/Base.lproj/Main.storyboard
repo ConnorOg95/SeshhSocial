@@ -176,7 +176,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFX-bs-Mhs" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
-                                        <rect key="frame" x="302" y="25" width="65" height="30"/>
+                                        <rect key="frame" x="302" y="42" width="65" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="65" id="4bD-eu-Z5J"/>
@@ -190,10 +190,10 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.23548424940000001" green="0.7992990888" blue="0.98851871199999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="vFX-bs-Mhs" secondAttribute="bottom" constant="8" id="6op-NR-KwR"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="DBa-HN-cTy"/>
                                     <constraint firstAttribute="height" constant="80" id="SWL-5a-5cm"/>
                                     <constraint firstItem="iUk-HL-s42" firstAttribute="centerX" secondItem="P8W-cO-9B2" secondAttribute="centerX" id="VEI-Vm-DYz"/>
-                                    <constraint firstItem="vFX-bs-Mhs" firstAttribute="centerY" secondItem="P8W-cO-9B2" secondAttribute="centerY" id="WDQ-ZD-eBC"/>
                                     <constraint firstAttribute="bottom" secondItem="iUk-HL-s42" secondAttribute="bottom" constant="3" id="dXb-zv-2Wq"/>
                                     <constraint firstAttribute="trailing" secondItem="vFX-bs-Mhs" secondAttribute="trailing" constant="8" id="mOQ-ZR-ARO"/>
                                 </constraints>
@@ -257,7 +257,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ag-QK-6Na" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
-                                        <rect key="frame" x="302" y="25" width="65" height="30"/>
+                                        <rect key="frame" x="302" y="42" width="65" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="65" id="gur-57-ll7"/>
@@ -275,7 +275,7 @@
                                 <color key="backgroundColor" red="0.23548424940000001" green="0.7992990888" blue="0.98851871199999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="9wX-sY-znA" firstAttribute="centerX" secondItem="IM9-RK-uhk" secondAttribute="centerX" id="4Rh-j4-Ras"/>
-                                    <constraint firstItem="4ag-QK-6Na" firstAttribute="centerY" secondItem="IM9-RK-uhk" secondAttribute="centerY" id="k4h-BI-Bge"/>
+                                    <constraint firstAttribute="bottom" secondItem="4ag-QK-6Na" secondAttribute="bottom" constant="8" id="lHJ-UZ-bk0"/>
                                     <constraint firstAttribute="bottom" secondItem="9wX-sY-znA" secondAttribute="bottom" constant="3" id="oO3-rb-lUh"/>
                                     <constraint firstAttribute="height" constant="80" id="yRd-tO-sMn"/>
                                     <constraint firstAttribute="trailing" secondItem="4ag-QK-6Na" secondAttribute="trailing" constant="8" id="zKx-pj-j0F"/>
@@ -284,15 +284,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ALh-19-fAJ" customClass="StandardDisplayView" customModule="SeshhSocial" customModuleProvider="target">
                                 <rect key="frame" x="16" y="112" width="343" height="523"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="Pw0-hh-PJz" customClass="st">
-                                        <rect key="frame" x="32" y="40" width="279" height="450"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Pw0-hh-PJz" customClass="st">
+                                        <rect key="frame" x="24" y="16" width="295" height="491"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTh-CN-ifY" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="279" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="68.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="2gt-zY-tdU"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                                 <state key="normal" title="SESHH FEED">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -302,11 +299,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GdB-ae-e1F" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="84" width="279" height="30"/>
+                                                <rect key="frame" x="0.0" y="84.5" width="295" height="68.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="Jyw-3f-PPP"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                                 <state key="normal" title="CHECK IN">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -316,22 +310,16 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tE5-2k-lvK" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="168" width="279" height="30"/>
+                                                <rect key="frame" x="0.0" y="169" width="295" height="68.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="e7o-RS-mKf"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                                 <state key="normal" title="PRE SESHH">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ge-6b-JJM" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="252" width="279" height="30"/>
+                                                <rect key="frame" x="0.0" y="253.5" width="295" height="68.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="PRP-yq-o28"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                                 <state key="normal" title="WHO'S ON THE SESHH?">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -341,22 +329,16 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6y-BK-exY" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="336" width="279" height="30"/>
+                                                <rect key="frame" x="0.0" y="338" width="295" height="68.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="no1-CD-zmi"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                                 <state key="normal" title="SESHH ACCOUNT">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1Q-Jj-mh2" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="420" width="279" height="30"/>
+                                                <rect key="frame" x="0.0" y="422.5" width="295" height="68.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="1QS-fQ-GqM"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                                 <state key="normal" title="SETTINGS">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -367,9 +349,10 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.23548424940000001" green="0.7992990888" blue="0.98851871199999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Pw0-hh-PJz" firstAttribute="leading" secondItem="ALh-19-fAJ" secondAttribute="leading" constant="32" id="0Yj-hf-97R"/>
-                                    <constraint firstAttribute="trailing" secondItem="Pw0-hh-PJz" secondAttribute="trailing" constant="32" id="Eq2-4F-ioP"/>
-                                    <constraint firstItem="Pw0-hh-PJz" firstAttribute="top" secondItem="ALh-19-fAJ" secondAttribute="top" constant="40" id="e0C-Tf-ZEs"/>
+                                    <constraint firstItem="Pw0-hh-PJz" firstAttribute="leading" secondItem="ALh-19-fAJ" secondAttribute="leading" constant="24" id="0Yj-hf-97R"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pw0-hh-PJz" secondAttribute="trailing" constant="24" id="Eq2-4F-ioP"/>
+                                    <constraint firstItem="Pw0-hh-PJz" firstAttribute="top" secondItem="ALh-19-fAJ" secondAttribute="top" constant="16" id="e0C-Tf-ZEs"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pw0-hh-PJz" secondAttribute="bottom" constant="16" id="sdD-2R-yzk"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -415,7 +398,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPO-AA-jtP" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
-                                        <rect key="frame" x="302" y="25" width="65" height="30"/>
+                                        <rect key="frame" x="302" y="42" width="65" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="UJJ-uM-lbu"/>
@@ -432,8 +415,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.23548424940000001" green="0.7992990888" blue="0.98851871199999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="cPO-AA-jtP" firstAttribute="centerY" secondItem="kB5-cJ-9F2" secondAttribute="centerY" id="1QI-yO-gbs"/>
                                     <constraint firstAttribute="bottom" secondItem="qtM-xB-q4t" secondAttribute="bottom" constant="3" id="2iv-3O-iRU"/>
+                                    <constraint firstAttribute="bottom" secondItem="cPO-AA-jtP" secondAttribute="bottom" constant="8" id="Due-Lh-hAf"/>
                                     <constraint firstAttribute="trailing" secondItem="cPO-AA-jtP" secondAttribute="trailing" constant="8" id="Vkd-on-Meh"/>
                                     <constraint firstItem="qtM-xB-q4t" firstAttribute="centerX" secondItem="kB5-cJ-9F2" secondAttribute="centerX" id="itw-oW-WbB"/>
                                     <constraint firstAttribute="height" constant="80" id="seD-qe-J6Y"/>
@@ -444,25 +427,27 @@
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="363" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t0e-QA-BbX">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="557"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="366" id="pwY-UV-DZj" customClass="PostCell" customModule="SeshhSocial" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="343" height="366"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="382" id="pwY-UV-DZj" customClass="PostCell" customModule="SeshhSocial" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="343" height="382"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pwY-UV-DZj" id="5j9-YI-weF">
-                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="366"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="382"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJG-IZ-Kmq">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJG-IZ-Kmq" customClass="StandardDisplayView" customModule="SeshhSocial" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="8" width="327" height="350"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Cbz-cB-vZX">
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Cbz-cB-vZX">
                                                                     <rect key="frame" x="8" y="8" width="311" height="302"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HYd-bY-3QG">
                                                                             <rect key="frame" x="0.0" y="0.0" width="311" height="60"/>
                                                                             <subviews>
-                                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="X6X-3c-6Nk" customClass="ProfileImageView" customModule="SeshhSocial" customModuleProvider="target">
+                                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile1" translatesAutoresizingMaskIntoConstraints="NO" id="X6X-3c-6Nk" customClass="ProfileImageView" customModule="SeshhSocial" customModuleProvider="target">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="60" id="EwH-Qk-RCy"/>
@@ -478,7 +463,7 @@
                                                                                                 <constraint firstAttribute="height" constant="38" id="4vY-lA-WU2"/>
                                                                                             </constraints>
                                                                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                            <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seshh Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ss-Xx-SPg">
@@ -487,7 +472,7 @@
                                                                                                 <constraint firstAttribute="height" constant="22" id="6TO-sK-fft"/>
                                                                                             </constraints>
                                                                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
-                                                                                            <color key="textColor" white="1" alpha="0.86879807692307698" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
                                                                                     </subviews>
@@ -512,7 +497,7 @@
                                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jfw-d2-bHK">
                                                                             <rect key="frame" x="0.0" y="68" width="311" height="65"/>
                                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                                            <color key="textColor" white="1" alpha="0.86879807689999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                         </textView>
@@ -522,72 +507,70 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrn-OJ-HBc">
-                                                                    <rect key="frame" x="41" y="321" width="50" height="25"/>
+                                                                    <rect key="frame" x="39" y="321" width="50" height="25"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="50" id="xVl-jb-NVF"/>
                                                                         <constraint firstAttribute="height" constant="25" id="zV6-Cr-df5"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="5Ee-In-kiD">
-                                                                    <rect key="frame" x="8" y="321" width="25" height="25"/>
+                                                                    <rect key="frame" x="8" y="319" width="25" height="25"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="25" id="FEK-NJ-57E"/>
                                                                         <constraint firstAttribute="height" constant="25" id="XxP-Cx-zos"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dr0-mr-tPo">
-                                                                    <rect key="frame" x="239" y="332" width="80" height="14"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTs-2l-dgU">
+                                                                    <rect key="frame" x="169" y="329" width="150" height="17"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" constant="80" id="Pk5-WL-A0x"/>
-                                                                        <constraint firstAttribute="height" constant="14" id="kTL-Af-Z8d"/>
+                                                                        <constraint firstAttribute="height" constant="17" id="Ru8-4P-y5Z"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTs-2l-dgU">
-                                                                    <rect key="frame" x="171" y="332" width="60" height="14"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="14" id="Ru8-4P-y5Z"/>
-                                                                        <constraint firstAttribute="width" constant="60" id="hfa-aj-1mW"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
-                                                            <color key="backgroundColor" red="0.23548424940000001" green="0.7992990888" blue="0.98851871199999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="bottom" secondItem="5Ee-In-kiD" secondAttribute="bottom" constant="4" id="4j4-6h-GJ3"/>
+                                                                <constraint firstAttribute="bottom" secondItem="5Ee-In-kiD" secondAttribute="bottom" constant="6" id="4j4-6h-GJ3"/>
                                                                 <constraint firstAttribute="bottom" secondItem="Cbz-cB-vZX" secondAttribute="bottom" constant="40" id="5av-29-n1n"/>
                                                                 <constraint firstItem="Cbz-cB-vZX" firstAttribute="top" secondItem="YJG-IZ-Kmq" secondAttribute="top" constant="8" id="B59-DX-BL0"/>
-                                                                <constraint firstItem="dr0-mr-tPo" firstAttribute="leading" secondItem="uTs-2l-dgU" secondAttribute="trailing" constant="8" id="DVK-3D-LH6"/>
                                                                 <constraint firstAttribute="bottom" secondItem="uTs-2l-dgU" secondAttribute="bottom" constant="4" id="OWD-F8-xUR"/>
                                                                 <constraint firstAttribute="bottom" secondItem="Hrn-OJ-HBc" secondAttribute="bottom" constant="4" id="U10-ZO-sU8"/>
-                                                                <constraint firstAttribute="trailing" secondItem="dr0-mr-tPo" secondAttribute="trailing" constant="8" id="Xtw-Ex-pXC"/>
-                                                                <constraint firstAttribute="bottom" secondItem="dr0-mr-tPo" secondAttribute="bottom" constant="4" id="c5K-pu-bwq"/>
+                                                                <constraint firstItem="uTs-2l-dgU" firstAttribute="leading" secondItem="Hrn-OJ-HBc" secondAttribute="trailing" constant="80" id="bia-rU-8cG"/>
                                                                 <constraint firstItem="Cbz-cB-vZX" firstAttribute="leading" secondItem="YJG-IZ-Kmq" secondAttribute="leading" constant="8" id="gXS-OZ-UYO"/>
                                                                 <constraint firstAttribute="trailing" secondItem="Cbz-cB-vZX" secondAttribute="trailing" constant="8" id="h4M-DV-6Xb"/>
                                                                 <constraint firstItem="5Ee-In-kiD" firstAttribute="leading" secondItem="YJG-IZ-Kmq" secondAttribute="leading" constant="8" id="hb5-PQ-ahX"/>
-                                                                <constraint firstItem="Hrn-OJ-HBc" firstAttribute="leading" secondItem="5Ee-In-kiD" secondAttribute="trailing" constant="8" id="txd-WW-lmt"/>
+                                                                <constraint firstAttribute="height" constant="350" id="jhR-IB-P1C"/>
+                                                                <constraint firstAttribute="trailing" secondItem="uTs-2l-dgU" secondAttribute="trailing" constant="8" id="trL-Ik-vpK"/>
+                                                                <constraint firstItem="Hrn-OJ-HBc" firstAttribute="leading" secondItem="5Ee-In-kiD" secondAttribute="trailing" constant="6" id="txd-WW-lmt"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KtS-m5-2ml">
+                                                            <rect key="frame" x="0.0" y="366" width="343" height="16"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="16" id="PGi-4S-e2b"/>
                                                             </constraints>
                                                         </view>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="YJG-IZ-Kmq" firstAttribute="leading" secondItem="5j9-YI-weF" secondAttribute="leading" constant="8" id="5Wf-sX-L9j"/>
+                                                        <constraint firstAttribute="bottom" secondItem="KtS-m5-2ml" secondAttribute="bottom" id="AeO-xD-06x"/>
                                                         <constraint firstAttribute="trailing" secondItem="YJG-IZ-Kmq" secondAttribute="trailing" constant="8" id="Ibu-HF-TB6"/>
-                                                        <constraint firstAttribute="bottom" secondItem="YJG-IZ-Kmq" secondAttribute="bottom" constant="8" id="SbP-Ur-GKO"/>
+                                                        <constraint firstItem="KtS-m5-2ml" firstAttribute="leading" secondItem="5j9-YI-weF" secondAttribute="leading" id="sIB-dW-bCO"/>
                                                         <constraint firstItem="YJG-IZ-Kmq" firstAttribute="top" secondItem="5j9-YI-weF" secondAttribute="top" constant="8" id="wRl-n3-CFb"/>
+                                                        <constraint firstAttribute="trailing" secondItem="KtS-m5-2ml" secondAttribute="trailing" id="zUa-uT-sui"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <connections>
                                                     <outlet property="nameLbl" destination="adS-em-F67" id="OAS-JH-aLG"/>
                                                     <outlet property="profileImg" destination="X6X-3c-6Nk" id="16m-Fc-SpL"/>
                                                     <outlet property="seshhCategoryImg" destination="466-mf-IYR" id="4Qc-VV-5l5"/>
-                                                    <outlet property="seshhCategoryLbl" destination="dr0-mr-tPo" id="YKE-Dn-LsD"/>
                                                     <outlet property="seshhDescriptionTxtView" destination="jfw-d2-bHK" id="vWM-10-PR8"/>
                                                     <outlet property="seshhLikesLbl" destination="Hrn-OJ-HBc" id="yZM-33-w4P"/>
                                                     <outlet property="seshhLocationLbl" destination="uTs-2l-dgU" id="WtQ-1J-eQ8"/>
@@ -599,7 +582,7 @@
                                         </prototypes>
                                     </tableView>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="t0e-QA-BbX" firstAttribute="top" secondItem="NLb-vL-LrQ" secondAttribute="top" id="7Xv-gF-xGk"/>
                                     <constraint firstAttribute="trailing" secondItem="t0e-QA-BbX" secondAttribute="trailing" id="Fm0-kJ-jau"/>
@@ -625,7 +608,64 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PAV-I0-E4Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="858" y="806"/>
+            <point key="canvasLocation" x="856.79999999999995" y="805.54722638680664"/>
+        </scene>
+        <!--Seshh ScreenVC-->
+        <scene sceneID="bnK-g6-0No">
+            <objects>
+                <viewController id="CPg-YO-z72" customClass="SeshhScreenVC" customModule="SeshhSocial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="beJ-WS-J4E"/>
+                        <viewControllerLayoutGuide type="bottom" id="bYk-OE-xyh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JBw-ur-3k3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s3s-45-SEK" customClass="HeaderView" customModule="SeshhSocial" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newseshhlogocropped" translatesAutoresizingMaskIntoConstraints="NO" id="CX9-dN-zYc">
+                                        <rect key="frame" x="88" y="23" width="200" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="EEX-ff-JdY"/>
+                                            <constraint firstAttribute="height" constant="54" id="eAI-XV-YiI"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dax-b6-tin" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
+                                        <rect key="frame" x="302" y="42" width="65" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="65" id="C0Z-hp-ffZ"/>
+                                            <constraint firstAttribute="height" constant="30" id="p5C-ex-D4P"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="11"/>
+                                        <state key="normal" title="HOME">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.23548424940000001" green="0.7992990888" blue="0.98851871199999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="dax-b6-tin" secondAttribute="bottom" constant="8" id="3hk-BY-cRG"/>
+                                    <constraint firstItem="CX9-dN-zYc" firstAttribute="centerX" secondItem="s3s-45-SEK" secondAttribute="centerX" id="B7a-gr-4TW"/>
+                                    <constraint firstAttribute="bottom" secondItem="CX9-dN-zYc" secondAttribute="bottom" constant="3" id="gOq-fe-wUa"/>
+                                    <constraint firstAttribute="height" constant="80" id="rgx-hi-8QT"/>
+                                    <constraint firstAttribute="trailing" secondItem="dax-b6-tin" secondAttribute="trailing" constant="8" id="zg8-om-YcN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="s3s-45-SEK" firstAttribute="top" secondItem="JBw-ur-3k3" secondAttribute="top" id="Kha-az-Mx1"/>
+                            <constraint firstAttribute="trailing" secondItem="s3s-45-SEK" secondAttribute="trailing" id="gUJ-4p-qnz"/>
+                            <constraint firstItem="s3s-45-SEK" firstAttribute="leading" secondItem="JBw-ur-3k3" secondAttribute="leading" id="vVF-TQ-7yj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TTc-oE-hyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="1593"/>
         </scene>
         <!--Check InVC-->
         <scene sceneID="ofb-cC-24e">
@@ -650,7 +690,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuJ-0H-ueo" customClass="RoundButton" customModule="SeshhSocial" customModuleProvider="target">
-                                        <rect key="frame" x="302" y="25" width="65" height="30"/>
+                                        <rect key="frame" x="302" y="42" width="65" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="b1f-cN-WYa"/>
@@ -668,9 +708,9 @@
                                 <color key="backgroundColor" red="0.23548424940000001" green="0.7992990888" blue="0.98851871199999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="hsc-0g-cfi" firstAttribute="centerX" secondItem="9zb-U8-wSZ" secondAttribute="centerX" id="Ado-Jv-NVF"/>
-                                    <constraint firstItem="vuJ-0H-ueo" firstAttribute="centerY" secondItem="9zb-U8-wSZ" secondAttribute="centerY" id="VSq-SR-8Qw"/>
                                     <constraint firstAttribute="trailing" secondItem="vuJ-0H-ueo" secondAttribute="trailing" constant="8" id="mnq-FL-36D"/>
                                     <constraint firstAttribute="height" constant="80" id="pbA-Zo-VJ2"/>
+                                    <constraint firstAttribute="bottom" secondItem="vuJ-0H-ueo" secondAttribute="bottom" constant="8" id="tmx-xm-f8N"/>
                                     <constraint firstAttribute="bottom" secondItem="hsc-0g-cfi" secondAttribute="bottom" constant="3" id="ywl-B6-z4h"/>
                                 </constraints>
                             </view>
@@ -1132,9 +1172,10 @@
         <image name="StarIcon" width="512" height="512"/>
         <image name="bg" width="1920" height="1200"/>
         <image name="newseshhlogocropped" width="212" height="74"/>
+        <image name="profile1" width="250" height="250"/>
         <image name="seshhlogo350frcropped" width="247" height="87"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9qV-Ny-D66"/>
+        <segue reference="qJm-dU-xz9"/>
     </inferredMetricsTieBreakers>
 </document>

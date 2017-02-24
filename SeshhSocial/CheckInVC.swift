@@ -22,6 +22,7 @@ class CheckInVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     var imgSelected = false
     var userRef: FIRDatabaseReference!
     var categorySelected = false
+    var currentUsername: String!
     
     let categories = ["Drinks Seshh", "Active Seshh", "Sports Seshh", "Recreational Seshh", "Music Seshh", "Entertainment Seshh"]
 
@@ -33,6 +34,28 @@ class CheckInVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         imagePicker.delegate = self
         categoryPicker.delegate = self
         categoryPicker.dataSource = self
+        
+        DataService.ds.REF_USER_CURRENT.observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            let dictionary = snapshot.value as? NSDictionary
+            if let username = dictionary?["username"] as? String {
+                self.currentUsername = username
+                print("CONNOR: Username - \(username)")
+            }
+//            if let profileImgURL = dictionary?["profileImgURL"] as? String {
+//                let url = URL(string: profileImgURL)
+//                
+//                URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
+//                    if error != nil {
+//                        print("CONNOR: Profile image URL error - \(error)")
+//                        return
+//                    }
+//                    DispatchQueue.main.async {
+//                        self.profileImageView.image = UIImage(data: data!)
+//                    }
+//                }).resume()
+//            }
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -99,13 +122,9 @@ class CheckInVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     func postToFirebase(imgURL: String) {
         
         userRef = DataService.ds.REF_USER_CURRENT.child("username")
-        // NEED TO GET USERNAME VALUE FROM THIS REFERENCE
-        
+        // ^ THIS IS THE REFERENCE TO THE CURRENT USERS USERNAME
         print("CONNOR: UserRef - \(userRef)")
-        
-        
-        //CASTED ALL OBJECTS AS AnyObject
-        
+
         let post: Dictionary<String, AnyObject> = [
         "description": descriptionTxtFld.text as AnyObject,
         "imageURL": imgURL as AnyObject,
@@ -113,7 +132,7 @@ class CheckInVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         "category": categoryBtn.titleLabel!.text as AnyObject,
         "title": titleTxtFld.text as AnyObject,
         "location": locationTxtFld.text as AnyObject,
-//        "username": userRef,
+        "username": currentUsername as AnyObject
         ]
         
         let firebasePost = DataService.ds.REF_SESSHS.childByAutoId()

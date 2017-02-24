@@ -43,5 +43,7 @@
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Access to photos is required to upload images.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location required to show nearby Seshh&apos;s.</string>
 </dict>
 </plist>
